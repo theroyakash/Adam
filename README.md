@@ -11,4 +11,6 @@ Stochastic gradient-based optimization is of core practical importance in many f
 We propose Adam, a method for efficient stochastic optimization that only requires first-order gra- dients with little memory requirement. The method computes individual adaptive learning rates for different parameters from estimates of first and second moments of the gradients; the name Adam is derived from adaptive moment estimation. Our method is designed to combine the advantages of two recently popular methods: AdaGrad (Duchi et al., 2011), which works well with sparse gra- dients, and RMSProp (Tieleman & Hinton, 2012), which works well in on-line and non-stationary settings; important connections to these and other stochastic optimization methods are clarified in section 5. Some of Adam’s advantages are that the magnitudes of parameter updates are invariant to rescaling of the gradient, its stepsizes are approximately bounded by the stepsize hyperparameter, it does not require a stationary objective, it works with sparse gradients, and it naturally performs a form of step size annealing.
 
 Let's see the Building Blocks:
+
 ### How the algorithm works?
+[Algo Image](./src/Screen%20Shot%202020-02-05%20at%2010.23.14%20PM.png)
